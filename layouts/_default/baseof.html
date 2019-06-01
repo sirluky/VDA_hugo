@@ -77,24 +77,6 @@
       .gallery .photo:nth-of-type(3) {
         background-image: url(http://www.vda.cz/userfiles/images/slider/dny_ot_dveri_2018.jpg);
       }*/
-      #slideshow {
-        transition: left 1s;
-      }
-
-      .gallery-dots div {
-        background: radial-gradient(#fff, #fff, rgb(128, 128, 128), #000000);
-      }
-
-      .gallery-dots [aktivni] {
-        background: radial-gradient(rgb(24, 120, 184), rgb(32, 98, 221), rgb(0, 174, 255), rgb(27, 109, 233));
-      }
-
-      #phototext {
-        z-index: 99;
-        opacity: 0.72;
-        background: rgb(0, 0, 0);
-        font-family: Arial, Helvetica, sans-serif;
-      }
 
       .links i,
       p {
@@ -202,10 +184,12 @@
     {{block "main" .}}
 
     {{ end }}
-    <div class="max-w-6xl mx-auto bg-gray-100">
-      {{block "content" .}}
+    <div class="bg-gray-200">
+      <div class="max-w-6xl mx-auto">
+        {{block "content" .}}
 
-      {{ end }}
+        {{ end }}
+      </div>
     </div>
 
     <script src="/js/index.js"></script>
