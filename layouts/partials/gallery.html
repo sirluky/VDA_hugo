@@ -18,7 +18,6 @@
 <div class="vdabg pb-10 md:pb-0">
   <div class="max-w-6xl mx-auto">
     {{$photos := index (where .Pages ".Title" "Galerie - NEZOBRAZOVAT !!!") 0}}
-    log:{{ $photos }}
     {{$photoCount := len (where $photos.Params.images . "<>" "")}}
     {{if ne $photoCount 0}}
     <div class="gallery-wrapper">
