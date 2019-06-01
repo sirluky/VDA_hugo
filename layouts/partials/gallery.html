@@ -19,7 +19,7 @@
   <div class="max-w-6xl mx-auto">
     {{$photos := index (where .Pages ".Title" "Galerie - NEZOBRAZOVAT !!!") 0}}
     log:{{ $photos }}
-    {{$photoCount := len (where $photos.Params.images . "<>" $photos.Params.images)}}
+    {{$photoCount := len (where $photos.Params.images . "<>" "")}}
     {{if ne $photoCount 0}}
     <div class="gallery-wrapper">
       <div class="overflow-hidden rounded">
