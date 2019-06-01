@@ -2,7 +2,7 @@
 title: 'Jidelna'
 icon: 'fas fa-coffee'
 order: 3
-draft: true
+draft: false
 ---
 
 Tady se Vari obedy ...
