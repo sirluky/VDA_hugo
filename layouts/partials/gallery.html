@@ -18,7 +18,7 @@
 <div class="vdabg pb-10 md:pb-0">
   <div class="max-w-6xl mx-auto">
     {{$photos := index (where .Pages ".File.Dir" "gallery\\") 0}}
-    {{ $photoCount := len ( where $photos.Params.images "." "!=" "") }}
+    {{ $photoCount := len ( where $photos.Params.images "." "ne" "") }}
 
     <div class="gallery-wrapper">
       <div class="overflow-hidden rounded">
