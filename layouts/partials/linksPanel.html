@@ -8,7 +8,8 @@
           <p class="mt-5 uppercase hover:text-pink-700">rozvrh a <br />suplovaní</p>
         </div> -->
 
-    {{range sort (where .Pages ".File.Dir" "panel\\") ".Params.order" "asc"}}
+    {{range sort (where .Pages ".Type" "panel") ".Params.order" "asc"}}
+
     <div class=" cursor-pointer" style="">
       <a href="{{.RelPermalink}}">
         <i style="font-size:80px" class=" mx-8 {{.Params.icon}} hover:text-blue-500"></i>
